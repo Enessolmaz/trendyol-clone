@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html, body {
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  width: 100%;
+  
+  background-color: #000000;
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.abcdef {
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000000 5%,
+    #000000 95%,
+    transparent
+  );
+}
+
+.st0 {
+  fill: white;
+  width: 36px !important;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: baseline !important;
+}
+
+.bannerOffer-img {
+  object-fit: cover;
+
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+.bannerOffer-img:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 1200px) {
+  .basketContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1201px) {
+  .basketContainer {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .productItems {
+    display: flex;
+    flex-direction: wrap;
+  }
+}
+
+@media (min-width: 601px) {
+  .productItems {
+    display: flex;
+    flex-direction: column;
+  }
+}
