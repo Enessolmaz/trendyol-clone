@@ -70,6 +70,8 @@ body {
   .productItems {
     display: flex;
     flex-direction: wrap;
+    gap: 0;
+   
   }
 }
 

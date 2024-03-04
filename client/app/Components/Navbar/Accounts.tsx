@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { SlBasket } from "react-icons/sl";
@@ -16,7 +16,6 @@ type IProps = {
 };
 
 const Accounts = ({ user, setId, loading, basket }: IProps) => {
-  // const [userLocalStatus, setUserLocalStatus] = useState("");
   const data = [
     {
       id: 1,
@@ -40,18 +39,15 @@ const Accounts = ({ user, setId, loading, basket }: IProps) => {
 
   const [isHover, setIsHover] = useState(false);
 
-  // useEffect(() => {
-  //   const localUser = localStorage.getItem("user");
-  //   if (localUser) {
-  //     setUserLocalStatus(localUser);
-  //   }
-  // }, []);
-
   return (
     <div className="flex gap-6 items-center justify-start ">
       <div className="flex items-center lg:gap-6  ">
         {loading ? (
-          <span className="text-xs border border-red-400 p-2 rounded-md flex items-center ">Onrender: Your free instance will spin down with inactivity, which can delay requests by 50 seconds or more.<IoIosWarning size={32} fill="red"/> </span>
+          <span className="text-xs border border-red-400 p-2 rounded-md flex items-center ">
+            Onrender: Your free instance will spin down with inactivity, which
+            can delay requests by 50 seconds or more.
+            <IoIosWarning className="animate-ping" size={32} fill="red" />{" "}
+          </span>
         ) : (
           <>
             <span

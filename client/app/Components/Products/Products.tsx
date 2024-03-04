@@ -45,7 +45,7 @@ const Products = () => {
   };
 
   return (
-    <div className="mt-2 basketContainer gap-2">
+    <div className="mt-2 basketContainer gap-8 md:gap-2">
       <div
         className={`side-filter-bar w-44  ${
           loading ? "opacity-5 transition-all" : "opacity-100 transition-all"
@@ -64,7 +64,7 @@ const Products = () => {
           {categories.map((item: any) => (
             <span
               onClick={() => addFilterItems(item)}
-              className="w-full h-fit hover:text-[#999999] transition-all text-white  rounded-md flex gap-2 items-center px-2  text-sm cursor-pointer"
+              className="w-full text-xs h-fit hover:text-[#999999] transition-all text-white  rounded-md flex gap-2 items-center px-2 sm:text-sm   cursor-pointer"
               key={item}
             >
               {item}

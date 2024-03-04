@@ -5,7 +5,11 @@ import { SwiperSlide, Swiper } from "swiper/react";
 import Loading from "./Skeleton";
 import Link from "next/link";
 
-const WidgetContainer = () => {
+type IText = {
+  text: string;
+};
+
+const WidgetContainer = ({ text }: IText) => {
   const [store, setStore] = useState([]);
   const [skeleton, setSkeleton] = useState(true);
   const [perView, setPerView] = useState(2);
@@ -42,7 +46,7 @@ const WidgetContainer = () => {
   return (
     <div className="w-full bg-[#211e1b] h-[453px] rounded-md  flex flex-col p-6  gap-4 border  border-[#414141] ">
       <div className="flex justify-between">
-        <span className="text-lg font-bold">Sana Özel Ürünler</span>
+        <span className="text-lg font-bold">{text}</span>
         <span className="text-sm">Tüm Ürünler!</span>
       </div>
 

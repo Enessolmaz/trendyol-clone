@@ -49,12 +49,9 @@ const UserFavorite = ({ url }: IUrl) => {
               <FaUser />
               Kullanici :{" "}
             </span>
-            <Link
-              className="border px-2 h-8 flex items-center border-black transition-all rounded hover:border-orange-500"
-              href={`/user/${url}`}
-            >
+            <span className="border px-2 h-8 flex items-center border-black transition-all rounded hover:border-orange-500 cursor-pointer">
               {user_information?.getUser?.email}
-            </Link>
+            </span>
           </div>
           <div className="flex flex-wrap gap-6 mt-2">
             {favorites?.length > 0 ? (

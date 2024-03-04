@@ -11,9 +11,10 @@ const HomePage = () => {
     <div className="flex flex-col gap-6 px-2 ">
       <SwiperSlick />
       <BannerListing />
-      <WidgetContainer />
+      <WidgetContainer text={"Sana Özel Ürünler"} />
       <BannerOffer />
-      <Footer/>
+      <WidgetContainer text={"Avantajlı Ürünler"} />
+      <Footer />
     </div>
   );
 };
