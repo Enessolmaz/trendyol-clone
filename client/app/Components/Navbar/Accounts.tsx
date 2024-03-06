@@ -44,7 +44,7 @@ const Accounts = ({ user, setId, loading, basket }: IProps) => {
       <div className="flex items-center lg:gap-6  ">
         {loading ? (
           <span className="text-xs border border-red-400 p-2 rounded-md flex items-center ">
-            Onrender: Your free instance will spin down with inactivity, which
+            Render: Your free instance will spin down with inactivity, which
             can delay requests by 50 seconds or more.
             <IoIosWarning className="animate-ping" size={32} fill="red" />{" "}
           </span>
