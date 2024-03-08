@@ -21,7 +21,7 @@ Technologies used in the project:
 <br/>
 
 
-<h2>💻 Technologies</h2>
+<h2>💻  Features</h2>
 
 *   Register and log in
 *   Add products to their cart
